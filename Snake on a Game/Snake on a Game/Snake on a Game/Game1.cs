@@ -20,6 +20,7 @@ namespace Snake_on_a_Game
         SpriteBatch spriteBatch;
         List<Vector2>snake=new List<Vector2>();
         Texture2D snakeTexture;
+        Vector2 Direction = new Vector2(0, 1);
 
         public Game1()
         {
@@ -76,6 +77,42 @@ namespace Snake_on_a_Game
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+
+            
+            
+
+            KeyboardState kb = Keyboard.GetState();
+            if (kb.IsKeyDown(Keys.Left))
+            {
+                Direction = new Vector2 (-1, 0);
+            }
+
+            if (kb.IsKeyDown(Keys.Right))
+            {
+                Direction = new Vector2 (1, 0);
+            }
+
+            if (kb.IsKeyDown(Keys.Up))
+            {
+                Direction = new Vector2 (0, -1);
+            }
+
+            if (kb.IsKeyDown(Keys.Down))
+            {
+                Direction = new Vector2(0, 1);
+            }
+
+
+
+            for (int i = snake.Count-1; i > 0; i--)
+            {
+                snake[i] = snake[i - 1];
+            }
+    
+            snake[0] += Direction;
+
+
+
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();

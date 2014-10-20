@@ -1,1 +1,2 @@
 C:\Users\eahscs\Documents\Visual Studio 2010\Projects\Snake on a Game\Snake on a Game\Snake on a GameContent\obj\x86\Debug\Snake on a GameContent.contentprojResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\Snakes-on-a-Game\Snake on a Game\Snake on a Game\Snake on a GameContent\obj\x86\Debug\Snake on a GameContent.contentprojResolveAssemblyReference.cache

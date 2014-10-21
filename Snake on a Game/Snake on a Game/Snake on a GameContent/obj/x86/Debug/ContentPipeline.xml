@@ -8,7 +8,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\eahscs\Documents\GitHub\Snakes-on-a-Game\Snake on a Game\Snake on a Game\Snake on a Game\bin\x86\Debug\Content\square.xnb</Output>
-      <Time>2014-10-20T07:53:50.8616-04:00</Time>
+      <Time>2014-10-21T07:34:43.738-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Foods.png</Source>
+      <Name>becin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\eahscs\Documents\GitHub\Snakes-on-a-Game\Snake on a Game\Snake on a Game\Snake on a Game\bin\x86\Debug\Content\becin.xnb</Output>
+      <Time>2014-10-21T08:22:46.9272-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

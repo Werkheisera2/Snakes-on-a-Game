@@ -19,8 +19,9 @@ namespace Snake_on_a_Game
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         List<Vector2>snake=new List<Vector2>();
-        Texture2D snakeTexture;
+        Texture2D snakeTexture, foodTexture;
         Vector2 Direction = new Vector2(0, 1);
+        Vector2 Food = new Vector2(10, 10);
 
         public Game1()
         {
@@ -49,6 +50,8 @@ namespace Snake_on_a_Game
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             snakeTexture = Content.Load<Texture2D>(@"square");
+            foodTexture = Content.Load<Texture2D>("becin");
+
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
@@ -144,6 +147,8 @@ namespace Snake_on_a_Game
                                                                  snakeTexture.Height),
                                                                  Color.Orange);
             }
+
+            spriteBatch.Draw(foodTexture, new Rectangle((int)Food.X * 20, (int)Food.Y * 20, 20, 20), new Rectangle(4,256,22,15), Color.White);
 
             spriteBatch.End();
         }
